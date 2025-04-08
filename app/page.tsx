@@ -4,19 +4,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="max-w-5xl mx-auto">
-      {/* Hero Section with Tech Background */}
-      <div className="relative overflow-hidden rounded-xl mb-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white transform hover:scale-[1.01] transition-all duration-300">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')] animate-pulse"></div>
-        </div>
+      {/* Hero Section with White Background */}
+      <div className="relative overflow-hidden rounded-xl mb-16 bg-white border border-gray-200 text-gray-900 transform hover:scale-[1.01] transition-all duration-300">
         <div className="relative px-8 py-16 text-center">
           <h1 className="text-5xl font-bold mb-4 animate-fade-in">{cvData.name}</h1>
-          <p className="text-xl mb-8 text-gray-300 animate-fade-in-delay">Data Analyst & Data Scientist</p>
+          <p className="text-xl mb-8 text-gray-600 animate-fade-in-delay">Data Analyst & Data Scientist</p>
           <div className="flex justify-center space-x-6">
-            <a href={`mailto:${cvData.contact.email}`} className="bg-white text-gray-900 px-6 py-2 rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <a href={`mailto:${cvData.contact.email}`} className="bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               Email Me
             </a>
-            <a href={`https://linkedin.com/in/${cvData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="bg-gray-700 text-white px-6 py-2 rounded-full hover:bg-gray-600 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <a href={`https://linkedin.com/in/${cvData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="bg-gray-100 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-200 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               LinkedIn
             </a>
           </div>
